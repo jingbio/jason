@@ -1,2 +1,28 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://jingbio.github.io/jason</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://jingbio.github.io/jason</link></image><lastBuildDate>Tue, 30 Jul 2024 01:05:30 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://jingbio.github.io/jason</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://jingbio.github.io/jason</link></image><lastBuildDate>Tue, 30 Jul 2024 16:10:40 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>spring打印前端请求参数</title><link>https://jingbio.github.io/jason/post/spring-da-yin-qian-duan-qing-qiu-can-shu.html</link><description>package com.gz.property.config;&#13;
+&#13;
+import cn.hutool.json.JSONUtil;&#13;
+import lombok.extern.slf4j.Slf4j;&#13;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;&#13;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;&#13;
+import org.springframework.context.annotation.Bean;&#13;
+import org.springframework.context.annotation.Configuration;&#13;
+import org.springframework.web.filter.OncePerRequestFilter;&#13;
+import org.springframework.web.servlet.HandlerInterceptor;&#13;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;&#13;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;&#13;
+&#13;
+import javax.servlet.FilterChain;&#13;
+import javax.servlet.ReadListener;&#13;
+import javax.servlet.ServletException;&#13;
+import javax.servlet.ServletInputStream;&#13;
+import javax.servlet.http.HttpServletRequest;&#13;
+import javax.servlet.http.HttpServletRequestWrapper;&#13;
+import javax.servlet.http.HttpServletResponse;&#13;
+import java.io.*;&#13;
+import java.util.Map;&#13;
+import java.util.Objects;&#13;
+&#13;
+/**&#13;
+ * 打印请求信息拦截器&#13;
+ * 为减少性能损耗，可使用isdebug = false 或者 注释此拦截器类。</description><guid isPermaLink="true">https://jingbio.github.io/jason/post/spring-da-yin-qian-duan-qing-qiu-can-shu.html</guid><pubDate>Tue, 30 Jul 2024 01:09:45 +0000</pubDate></item></channel></rss>
